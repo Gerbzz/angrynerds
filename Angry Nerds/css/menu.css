@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+:root {
+  --ff-primary: 'Source Sans Pro', sans-serif;
+  --ff-secondary: 'Source Code Pro', monospace;
+  
+}
+body {
+  padding-top: 3rem;
+  color: #5a5a5a;
+  font-family: var(--ff-primary);
+}
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+nav {
+  font-weight: 400;
+  color: #45b751;
+  text-transform: uppercase;
+}
+nav .btn {
+  color: #45b751;
+}
+.nav-item::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: #45b751;
+  transition: 0.2s;
+}
+.nav-item:hover::after {
+  width: 100%;
+}
+/*-------Target highest parent element and apply padding to jumbotron-------*/
+
+/*-------------------------------------------------*/
+.jumbotron {
+  margin-bottom: 0;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+  padding-bottom: 2rem;
+}
+
+.jumbotron-heading {
+  font-weight: 900;
+  color: #45b751;
+  padding-top: 2rem;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+  min-height: 15rem;
+}
+p span {
+  text-decoration: line-through;
+}
+/* FOOTER
+---------------------------------------------------- */
+/*----Padding fix for footer-----*/
+footer {
+  background-color: #ddd;
+  padding-bottom: 3rem;
+  margin: 0;
+}
+.social {
+  font-size: 1.5em;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 40em) {
+  footer {
+    padding-bottom: 1rem;
+  }
+}

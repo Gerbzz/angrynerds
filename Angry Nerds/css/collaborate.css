@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+:root {
+  --ff-primary: 'Source Sans Pro', sans-serif;
+  --ff-secondary: 'Source Code Pro', monospace;
+  
+}
+body {
+  padding-top: 3rem;
+  color: #5a5a5a;
+  font-family: var(--ff-primary);
+}
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+nav {
+  font-weight: 400;
+  color: #45b751;
+  text-transform: uppercase;
+}
+nav .btn {
+  color: #45b751;
+}
+.nav-item::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 2px;
+  background: #45b751;
+  transition: 0.2s;
+}
+.nav-item:hover::after {
+  width: 100%;
+}
+/*------JUMBOTRON------*/
+.jumbotron h1 {
+  font-weight: 500;
+  color: #45b751;
+}
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.05rem;
+  color: #45b751;
+}
+#signUp {
+  padding-top: 3rem;
+}
+#signUp .btn {
+  padding: 1rem 3rem 1rem 3rem;
+}
+/*------FORM------*/
+main label {
+  display: block;
+  float: left;
+  text-align: right;
+  font-weight: bold;
+  width: 10em;
+  padding-right: 1em;
+}
+main textarea {
+  display: block;
+  margin-bottom: 2em;
+}
+main input {
+  display: block;
+  margin-bottom: 2em;
+}
+#mySubmit {
+  margin-left: 12em;
+}
+main form {
+  width: 50%;
+  padding: 3em;
+  margin: 0 auto;
+}
+
+/*------FOOTER------*/
+
+footer {
+  background-color: #ddd;
+  padding-bottom: 3rem;
+  margin-top: 3rem;
+}
+.social {
+  font-size: 1.5em;
+}
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+@media (min-width: 40em) {
+  footer {
+    padding-bottom: 1rem;
+  }
+}
